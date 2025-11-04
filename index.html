@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix 愛してる</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="logo" width="50px">
+        </div>
+        
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Séries</a>
+            <a href="#">Filmes</a>
+            <a href="#">Minha lista</a>
+        </nav>
+    </header>
+    
+    <section class="banner">
+        <div class="conteudo">
+            <p class="titulo">Adriano e Ludmylla</p>
+            <p class="detalhes">
+                <span>01 DE MAIO, 06 EPISÓDIOS</span>
+                <span class="stars">
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-star" style="color: #ff0000;"></i>
+                </span>
+
+                <p class="descricao">
+                    “O amor é algo eterno — o aspecto pode mudar, mas não a essência. Existe a mesma diferença entre um amor e outro que há entre uma luz e outra; a luz do sol não é menos bela porque muda ao entardecer. Amar alguém profundamente nos dá força, e sermos amados profundamente nos dá coragem.
+                    
+                    Eu sinto que há algo de infinito em nós dois — como se nossas almas se encontrassem entre as estrelas que tanto admiro. Pois o amor verdadeiro, como a arte, nasce da alma que vê beleza até na escuridão.” - <strong>Van Gogh</strong>
+                </p>
+
+                <div class="botoes">
+                    <button> <i class="fa-solid fa-play" style="color: #000000;"></i> Continuar</button>
+                    <button> <i class="fa-solid fa-star" style="color: #000000;"></i> Favorito</button>
+                </div>
+            </p>
+        </div>
+    </section>
+
+    <section class="momentos">
+        <h2>Nossos Melhores Momentos</h2>
+        <div class="swiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide"> <img src="./assets/images/07.jpg"> </div>
+            <div class="swiper-slide"> <img src="./assets/images/03.jpg"> </div>
+            <div class="swiper-slide"> <img src="./assets/images/04.jpg"> </div>
+            <div class="swiper-slide"> <img src="./assets/images/02.jpg"> </div>
+            <div class="swiper-slide"> <img src="./assets/images/06.jpg"> </div>
+            <div class="swiper-slide"> <img src="./assets/images/08.jpg"> </div>
+            <div class="swiper-slide"> <img src="./assets/images/05.jpg"> </div>
+        </div>
+
+    </div>
+    </section>
+
+    <footer>
+        4 de Novembro de 2025 - <a href="https://instagram.com/adking.dev" target="_blank">@adking.dev</a>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+
+            slidesPerView: 2,
+            spaceBetween: 10,
+            loop: true,
+            breakpoints: {
+                600: {
+                    loop: true,
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                900: {
+                    loop: true,
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+            },
+        });
+    </script>
+</body>
+</html>
