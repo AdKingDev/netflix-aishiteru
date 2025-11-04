@@ -118,8 +118,13 @@ body {
     display: block;
     width: 200px;
     height: 350px;
+    flex-shrink: 0;
     border-radius: 5px;
     margin: 0 auto;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
 }
 
 @media (min-width: 900px) {

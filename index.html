@@ -75,29 +75,20 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script>
-        const swiper = new Swiper('.swiper', {
-            loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
+    const swiper = new Swiper('.swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    loop: true,
+    allowTouchMove: true,
+    speed: 8000,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+    });
 
-            slidesPerView: 2,
-            spaceBetween: 10,
-            loop: true,
-            breakpoints: {
-                600: {
-                    loop: true,
-                    slidesPerView: 3,
-                    spaceBetween: 15,
-                },
-                900: {
-                    loop: true,
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                },
-            },
-        });
+    swiper.wrapperEl.style.transitionTimingFunction = 'linear';
     </script>
+
 </body>
 </html>
